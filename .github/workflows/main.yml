@@ -24,7 +24,7 @@ jobs:
 
       # Install dependencies with npm
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
 
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build
