@@ -74,6 +74,16 @@
     svelte "^3.24.0"
     svelte2tsx "^0.5.5"
 
+"@astrojs/tailwind@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@astrojs/tailwind/-/tailwind-0.2.1.tgz#a8397d2a2d4310b0735b4bfe2f5d1d7b97b533c6"
+  integrity sha512-aHG6YZjfkkXNwEzgR8VG0u0qWjXwset6oqe0LpdIOKYZJuqo0WL8gmacF/8Dhl8WkJbNinFUzQcd6HCfU0EcyQ==
+  dependencies:
+    "@proload/core" "^0.3.1"
+    autoprefixer "^10.4.4"
+    postcss "^8.4.12"
+    tailwindcss "^3.0.24"
+
 "@astrojs/webapi@^0.11.1":
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/@astrojs/webapi/-/webapi-0.11.1.tgz#d9b57e86e806944cefea2f117f2d5898ebc730ee"
@@ -335,7 +345,7 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@proload/core@^0.3.2":
+"@proload/core@^0.3.1", "@proload/core@^0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@proload/core/-/core-0.3.2.tgz#de36f335bf87dd6aa8ba25aa92c498821db3a229"
   integrity sha512-4ga4HpS0ieVYWVMS+F62W++6SNACBu0lkw8snw3tEdH6AeqZu8i8262n3I81jWAWXVcg3sMfhb+kBexrfGrTUQ==
@@ -614,7 +624,7 @@ astro@^1.0.0-beta.20:
     yargs-parser "^21.0.1"
     zod "^3.14.4"
 
-autoprefixer@^10.4.7:
+autoprefixer@^10.4.4:
   version "10.4.7"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-10.4.7.tgz#1db8d195f41a52ca5069b7593be167618edbbedf"
   integrity sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==

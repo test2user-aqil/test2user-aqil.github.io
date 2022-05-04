@@ -10,10 +10,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.20",
-    "autoprefixer": "^10.4.7",
-    "postcss": "^8.4.13",
-    "tailwindcss": "^3.0.24"
+    "@astrojs/tailwind": "^0.2.1",
+    "astro": "^1.0.0-beta.20"
   },
   "dependencies": {
     "astro-icon": "^0.7.1"

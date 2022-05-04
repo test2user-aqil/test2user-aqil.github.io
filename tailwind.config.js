@@ -5,16 +5,13 @@ module.exports = {
     fontFamily: {
       mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
       display: ['Inter', 'system-ui', 'sans-serif'],
-      body: ['Inter', 'system-ui', 'sans-serif'],
     },
     colors: {
-      dark0: "#1e2022",
+      bg: "#25272d",
+      dark0: "#121518",
       dark1: "#303236",
-      dark3: "#3d3f43",
-      light0: "#ffffff",
-      light1: "#f0f0f0",
-      light2: "#d6cbff",
-      light3: "#6c8c9b",
+      fg: "#dddddd",
+      accent1: "#687aa7"
     },
 
     extend: {},
