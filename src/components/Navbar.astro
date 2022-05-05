@@ -1,28 +1,9 @@
 ---
-import { Icon } from 'astro-icon'
+  import NavLinks from './Nav-links.astro';
 ---
 
-<style lang="css">
-    [astro-icon="fe:home"] {
-        width: 24px;
-    }
-</style>
 
-<nav class="h-14 bg-dark0 p-3 items-center">
-  <div class="max-w-5xl mx-auto flex justify-around">
-
-    <div class="max-h-10 my-auto">
-      <ul class="flex space-x-3 text-light1 ">
-
-        <li class="flex rounded-md bg-dark1 checked:bg-dark1 space-x-1 px-4 py-1 transition">
-          <Icon name="fe:home"/> <a href="#">Home</a>
-        </li>
-     
-          
-      </ul>
-    </div>
-
-    <h1 class="text-2xl font-mono text-light3 font-semibold flex ">test2user-aqil</h1>
-
-  </div>
+<nav class="h-16 max-w-3xl bg-dark0 md:rounded-2xl mx-auto md:my-4 mb-4 box-shadow flex md:justify-between justify-center items-center p-4 px-6">
+  <NavLinks />
+  <h2 class="font-mono font-semibold text-xl hidden md:flex">test2user-aqil</h2>
 </nav>
