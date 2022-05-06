@@ -1,9 +1,30 @@
 ---
-  import NavLinks from './Nav-links.astro';
----
+export interface Props{
+  active: string
+}
 
+const {active} = Astro.props;
+---
+<p id="burh0" class="hidden fixed">{active}</p>
 
 <nav class="h-16 max-w-3xl bg-dark0 md:rounded-2xl mx-auto md:my-4 mb-4 box-shadow flex md:justify-between justify-center items-center p-4 px-6">
-  <NavLinks />
+  <!--NAV-LINKS-->
+
+  <ul class="flex">
+
+    <li id="home" class="mr-4 px-3 py-1 rounded "><a href="/">Home</a></li>
+    <li id="projects" class="mr-4 px-3 py-1 rounded "><a href="/projects">Projects</a></li>
+    <li id="about" class="mr-4 px-3 py-1 rounded "><a href="/about">About</a></li>
+  
+  </ul>
+
+  <!--TITLE-->
+  
   <h2 class="font-mono font-semibold text-xl hidden md:flex">test2user-aqil</h2>
+
 </nav>
+
+<script>
+  const p = document.getElementById("burh0").textContent;
+  document.getElementById(p).classList.add("active");
+</script>
