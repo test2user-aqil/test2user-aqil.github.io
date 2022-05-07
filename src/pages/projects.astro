@@ -1,9 +1,32 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import ProjectCard from '../components/ProjectCard.astro';
 ---
 
 <Layout title="Projects | test2user-aqil">
 	<Navbar active="projects"/>
-    <div class="mx-auto my-4 text-2xl max-w-3xl p-2">This page is still empty </div>
+    <div class="max-w-3xl mx-auto">
+
+        <div class="flex flex-wrap">
+            <ProjectCard 
+                title="test01" 
+                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat architecto veritatis nobis, dolorem laborum consequuntur quos quod, delectus provident molestias esse maiores nemo quisquam porro nesciunt tempora? Autem, quae voluptates."
+                link="https://github.com/test2user-aqil/test2user-aqil.github.io"
+                image="/assets/test01.webp"
+            />
+            <ProjectCard 
+                title="test02" 
+                description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, iusto eveniet? Voluptatem molestiae possimus accusamus nesciunt fugit? Fugit, iure voluptatibus vitae recusandae incidunt quo laboriosam officiis minus, iste quasi mollitia!"
+                link="https://github.com/test2user-aqil/test2user-aqil.github.io"
+                image="/assets/test02.webp"
+            />
+            <ProjectCard 
+                title="test03" 
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas asperiores sint quod saepe, aut maiores expedita hic magni voluptates sunt! Doloremque et quae minus totam ullam animi sint accusamus."
+                link="https://github.com/test2user-aqil/test2user-aqil.github.io"
+                image="/assets/test01.webp"
+            />
+        </div>
+    </div>
 </Layout>

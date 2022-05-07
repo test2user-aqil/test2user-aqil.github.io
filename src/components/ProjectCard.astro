@@ -1,0 +1,46 @@
+---
+import Icon from "astro-icon";
+
+export interface Props{
+    title: string,
+    description: string,
+    image?: string,
+    link: string
+}
+
+const { title, description, image = " ", link} = Astro.props;
+---
+
+<style>
+    [astro-icon="fe:github"] {
+        width: 24px;
+    }
+    [astro-icon="fe:link-external"] {
+        width: 24px;
+    }
+</style>
+
+<div class="bg-dark0 min-w-fit md:max-w-sm m-2 rounded-2xl box-shadow overflow-hidden flex flex-col">
+    <div>
+        <img src={image} alt="" class="w-auto brightness-90">
+    </div>
+
+    <div class="p-4 flex flex-col">   
+
+        <h2 class="font-semibold font-mono text-2xl">{title}</h2>
+
+        <p class="mt-4">{description}</p>
+
+
+        <!--LINK-->
+        <a href={link} class="text-fgmuted mt-2 px-3 py-2 border border-dark1 rounded-lg font-normal flex flex-">
+            <div class="flex mr-auto">
+                <Icon name="fe:github" />
+                <p class="ml-2"> Open in GitHub </p>
+            </div>
+            <Icon name="fe:link-external" />
+        </a>
+
+    </div>
+    
+</div>

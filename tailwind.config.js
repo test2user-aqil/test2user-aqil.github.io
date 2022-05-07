@@ -11,6 +11,7 @@ module.exports = {
       dark0: "#121518",
       dark1: "#303236",
       fg: "#dddddd",
+      fgmuted: "#969798",
       accent1: "#687aa7"
     },
 
