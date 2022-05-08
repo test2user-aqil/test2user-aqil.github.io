@@ -1,0 +1,48 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<style>
+    [astro-icon="fe:arrow-up"] {
+        width: 28px;
+        color: #687aa7;
+    }
+    button:hover [astro-icon="fe:arrow-up"]{
+        color: #ddd;
+    }
+</style>
+
+<button id="gototop" class="invisible  flex fixed bottom-4 right-4 w-12 h-12 rounded-md border-2 border-accent1 hover:bg-accent1  items-center justify-center transition-all">
+    <Icon name="fe:arrow-up" />
+</button>
+
+<script>
+
+    let lastKnownScrollPosition = 0;
+    let gototop = document.getElementById('gototop');
+    
+    function scrollToTop(){
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
+    function checkScroll(scrollPos) {
+        if(scrollPos > 200){
+            gototop.style.opacity = '1';
+            gototop.classList.remove("invisible");
+        }
+        else{
+            gototop.style.opacity = '0';
+            gototop.classList.add("invisible");
+        }
+    }
+
+    document.addEventListener('scroll', (e) =>{
+        lastKnownScrollPosition = window.scrollY;
+        checkScroll(lastKnownScrollPosition);
+    })
+
+    gototop.onclick = scrollToTop;
+</script>
