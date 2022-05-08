@@ -7,24 +7,43 @@ const { active } = Astro.props;
 ---
 <p id="burh0" class="hidden fixed">{active}</p>
 
-<nav class="nav">
-  <!--NAV-LINKS-->
+<nav id="nav" class="nav">
+	<!--NAV-LINKS-->
 
-  <ul class="flex">
+	<ul class="flex">
 
-    <li id="home" class="nav-link"><a href="/">Home</a></li>
-    <li id="projects" class="nav-link"><a href="/projects">Projects</a></li>
-    <li id="about" class="nav-link"><a href="/about">About</a></li>
-  
-  </ul>
+		<li id="home" class="nav-link"><a href="/">Home</a></li>
+		<li id="projects" class="nav-link"><a href="/projects">Projects</a></li>
+		<li id="about" class="nav-link"><a href="/about">About</a></li>
 
-  <!--TITLE-->
-  
-  <h2 class="font-mono font-semibold text-xl hidden md:flex">test2user-aqil</h2>
+	</ul>
+
+	<!--TITLE-->
+
+	<h2 class="font-mono font-semibold text-xl hidden md:flex">test2user-aqil</h2>
 
 </nav>
 
 <script>
-  const p = document.getElementById("burh0").textContent;
-  document.getElementById(p).classList.add("active");
+	const p = document.getElementById("burh0").textContent;
+	document.getElementById(p).classList.add("active");
+
+
+	let nav = document.getElementById('nav');
+	let lastKnownScrollPosition = 0;
+
+	function checkScroll(scrollPos) {
+		if(scrollPos >= 16){
+			nav.classList.add("rounded-t-none", "border-x-accent1");
+		}
+		else{
+			nav.classList.remove("rounded-t-none", "border-x-accent1");
+		}
+	}
+
+	document.addEventListener('scroll', (e) =>{
+		lastKnownScrollPosition = window.scrollY;
+		checkScroll(lastKnownScrollPosition);
+	})
+
 </script>

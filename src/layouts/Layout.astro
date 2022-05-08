@@ -7,18 +7,18 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/x-icon" href="/favicon.svg" />
-    <style is:global>
-      @import "../styles/global.css";
-    </style>
-    <title>{title}</title>
-  </head>
-  <body class="bg-bg text-fg">
-    <slot />
-    <GoToTop />
-    <Footer />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" type="image/x-icon" href="/favicon.svg" />
+	<style is:global>
+		@import "../styles/global.css";	
+	</style>
+	<title>{title}</title>
+</head>
+<body class="bg-bg text-fg">
+	<slot />
+	<GoToTop />
+	<Footer />
 </body>
 </html>
