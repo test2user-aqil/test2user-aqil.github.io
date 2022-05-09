@@ -12,7 +12,7 @@ import { Icon } from "astro-icon";
     }
 </style>
 
-<button id="gototop" class="invisible  flex fixed bottom-4 right-4 w-12 h-12 rounded-md border-2 border-accent1 hover:bg-accent1  items-center justify-center transition-all">
+<button id="gototop" class="invisible bg-dark0 flex fixed -bottom-16 right-4 w-12 h-12 rounded-md border-2 border-accent1 hover:bg-accent1  items-center justify-center transition-all">
     <Icon name="fe:arrow-up" />
 </button>
 
@@ -31,10 +31,12 @@ import { Icon } from "astro-icon";
     function checkScroll(scrollPos) {
         if(scrollPos > 200){
             gototop.style.opacity = '1';
+            gototop.classList.replace("-bottom-16", "bottom-4");
             gototop.classList.remove("invisible");
         }
         else{
             gototop.style.opacity = '0';
+            gototop.classList.replace("bottom-4", "-bottom-16");
             gototop.classList.add("invisible");
         }
     }
