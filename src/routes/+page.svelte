@@ -1,5 +1,8 @@
 <script lang="ts">
+	import Link from '../Link.svelte';
 	import './style.css';
+
+	import github from '../icons/github-mark-white.svg';
 </script>
 
 <svelte:head>
@@ -10,6 +13,8 @@
 	<img src="/avatar1024.png" alt="Avatar" class="avatar" />
 
 	<h1>test2user-aqil</h1>
+
+	<Link link="https://github.com/test2user-aqil" src={github} text="GitHub" />
 </div>
 
 <style>
