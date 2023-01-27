@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Link from '../Link.svelte';
+	import Project from '../Project.svelte';
 	import './style.css';
 
 	import github from '../icons/github-mark-white.svg';
@@ -9,7 +10,7 @@
 	<title>test2user-aqil</title>
 </svelte:head>
 
-<div class="container">
+<div class="container header">
 	<img src="/avatar1024.png" alt="Avatar" class="avatar" />
 
 	<h1>test2user-aqil</h1>
@@ -17,19 +18,53 @@
 	<Link link="https://github.com/test2user-aqil" src={github} text="GitHub" />
 </div>
 
+<div class="container projects">
+	<h1>&darr; Picked projects &darr;</h1>
+	<div id="projects">
+		<Project
+			title="serguzeshti-bekar"
+			link="https://github.com/test2user-aqil/serguzeshti-bekar"
+			descripton="Bekarın macəraları"
+		/>
+	</div>
+</div>
+
 <style>
 	.container {
-		height: 85vh;
-		display: flex;
+		min-height: 100vh;
+		max-width: 1000px;
+		margin: 0 auto;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 2rem;
 	}
 	.avatar {
 		height: 200px;
 		width: 200px;
 		border-radius: 100%;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	}
+
+	.header {
+		min-height: 85vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	.projects {
+		display: flex;
+	}
+	.projects h1 {
+		margin: 3rem auto;
+	}
+
+	#projects {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
 	}
 </style>
