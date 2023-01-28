@@ -21,15 +21,22 @@
 	<h1>test2user-aqil</h1>
 
 	<Link link="https://github.com/test2user-aqil" src={github} text="GitHub" />
+
+	<h2><a href="#projects"> &darr; Picked projects &darr;</a></h2>
 </div>
 
 <div class="container projects">
-	<h1>&darr; Picked projects &darr;</h1>
+	<h1 id="projects">Picked projects</h1>
 	<div id="projects">
 		<Project
 			title="serguzeshti-bekar"
 			link="https://github.com/test2user-aqil/serguzeshti-bekar"
 			descripton="Bekarın macəraları"
+		/>
+		<Project
+			title="wdc_baku"
+			link="https://github.com/test2user-aqil/wdc_baku"
+			descripton="Weather Data Collector for Baku"
 		/>
 	</div>
 </div>
@@ -39,6 +46,7 @@
 		min-height: 100vh;
 		max-width: 1000px;
 		margin: 0 auto;
+		padding: 0 1rem;
 		flex-direction: column;
 	}
 	.avatar {
@@ -49,7 +57,6 @@
 	}
 
 	.header {
-		min-height: 85vh;
 		display: flex;
 		flex-direction: column;
 		align-items: center;

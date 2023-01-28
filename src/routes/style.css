@@ -10,12 +10,17 @@
 	color: var(--fg);
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100vh;
 	background: radial-gradient(50% 50% at 50% 50%, #252631 0%, #1a1b1f 100%);
 	font-family: 'Roboto', sans-serif; /* 'Roboto', sans-serif */
 }
 
-h1 {
+h1,
+h2 {
 	font-family: 'Roboto Mono', monospace;
 }
