@@ -54,6 +54,7 @@
 		width: 200px;
 		border-radius: 100%;
 		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+		animation: spin 1.5s cubic-bezier(1, 0, 0, 1) 0.2s;
 	}
 
 	.header {
@@ -78,5 +79,14 @@
 		align-items: center;
 		justify-content: center;
 		gap: 1rem;
+	}
+
+	@keyframes spin {
+		from {
+			transform: rotate(-720deg);
+		}
+		to {
+			transform: rotate(0);
+		}
 	}
 </style>
