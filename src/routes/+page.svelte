@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Link from '../Link.svelte';
-	import Project from '../Project.svelte';
-	import './style.css';
+	import Link from '$lib/components/Link.svelte';
+	import Project from '$lib/components/Project.svelte';
+	import '$lib/styles/style.css';
 
-	import github from '../icons/github-mark-white.svg';
+	import github from '$lib/icons/github-mark-white.svg';
 </script>
 
 <svelte:head>
