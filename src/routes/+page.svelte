@@ -4,6 +4,7 @@
 	import '$lib/styles/style.css';
 
 	import github from '$lib/icons/github-mark-white.svg';
+	import twitter from '$lib/icons/twitter-logo-white.svg';
 </script>
 
 <svelte:head>
@@ -20,7 +21,11 @@
 
 	<h1>test2user-aqil</h1>
 
-	<Link link="https://github.com/test2user-aqil" src={github} text="GitHub" />
+	<div class="socials">
+		<Link link="https://github.com/test2user-aqil" src={github} text="GitHub" />
+
+		<Link link="https://twitter.com/usr0x41" src={twitter} text="Twitter" />
+	</div>
 
 	<h2><a href="#projects"> &darr; Picked projects &darr;</a></h2>
 </div>
@@ -63,6 +68,11 @@
 		align-items: center;
 		justify-content: center;
 		gap: 2rem;
+	}
+	.socials {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
 	}
 
 	.projects {
