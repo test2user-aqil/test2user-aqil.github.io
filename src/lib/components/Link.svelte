@@ -14,18 +14,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding: 1.1rem 3.2rem;
-		border-radius: 1rem;
+		padding: 0.8rem 2rem;
+		border-radius: 0.5rem;
 		background: linear-gradient(90deg, #4040b1 0%, #40406c 100%);
 		gap: 0.5rem;
 		text-decoration: none;
-		transition: 0.3s ease-in-out all;
+		transition: 0.3s ease-in-out;
 	}
 	a:hover {
 		filter: brightness(1.2);
 	}
 	a img {
-		width: 1.5rem;
-		height: 1.5rem;
+		width: 1.2rem;
+		height: 1.2rem;
 	}
 </style>

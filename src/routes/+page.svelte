@@ -27,7 +27,7 @@
 		<Link link="https://twitter.com/usr0x41" src={twitter} text="Twitter" />
 	</div>
 
-	<h2><a href="#projects"> &darr; Picked projects &darr;</a></h2>
+	<h2 class="arrow"><a href="#projects">&darr;</a></h2>
 </div>
 
 <div class="container projects">
@@ -72,7 +72,7 @@
 	.socials {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 1rem;
+		gap: 0.8rem;
 	}
 
 	.projects {
@@ -98,5 +98,12 @@
 		to {
 			transform: rotate(0);
 		}
+	}
+	.arrow {
+		position: absolute;
+		bottom: 20px;
+	}
+	.arrow a {
+		text-decoration: none;
 	}
 </style>
