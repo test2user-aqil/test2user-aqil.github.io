@@ -1,8 +1,5 @@
 <script lang="ts">
 	import '$lib/styles/style.css';
-
-	import github from '$lib/icons/github-mark-white.svg';
-	import twitter from '$lib/icons/twitter-logo-white.svg';
 </script>
 
 <svelte:head>
@@ -14,4 +11,7 @@
 	<meta name="description" content="test2user's home page" />
 </svelte:head>
 
-t
+<div class="hero">
+	<img src="/hero.jpg" alt="Hero img" />
+	<h1>test2user-aqil</h1>
+</div>
