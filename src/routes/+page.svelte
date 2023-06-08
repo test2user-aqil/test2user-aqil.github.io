@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '$lib/styles/style.css';
+	import Hero from '$lib/components/Hero.svelte';
 </script>
 
 <svelte:head>
@@ -11,7 +12,14 @@
 	<meta name="description" content="test2user's home page" />
 </svelte:head>
 
-<div class="hero">
-	<img src="/hero.jpg" alt="Hero img" />
-	<h1>test2user-aqil</h1>
+<Hero />
+
+<div class="container">
+	<h2>Projects:</h2>
 </div>
+
+<style>
+	.container {
+		margin-top: 16px;
+	}
+</style>
