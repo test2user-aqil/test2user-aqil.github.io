@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '$lib/styles/style.css';
 	import Hero from '$lib/components/Hero.svelte';
+	import ProjectCard from '$lib/components/ProjectCard.svelte';
 </script>
 
 <svelte:head>
@@ -15,11 +16,38 @@
 <Hero />
 
 <div class="container">
-	<h2>Projects:</h2>
+	<h2 id="#projects">Projects:</h2>
+
+	<div class="projects">
+		<ProjectCard
+			title="wdc_baku"
+			link="https://github.com/test2user-aqil/wdc_baku"
+			descripton="Stay on top of Baku's weather with the Weather Data Collector for Baku"
+		/>
+	</div>
 </div>
 
 <style>
+	/**
+	 * Container
+	 */
+
 	.container {
-		margin-top: 16px;
+		max-width: 800px;
+		margin: 16px auto 0;
+	}
+	.container h2 {
+		padding: 16px;
+	}
+
+	/**
+	 * Projects
+	 */
+
+	.projects {
+		display: flex;
+		padding: 16px;
+		flex-wrap: wrap;
+		gap: 8px;
 	}
 </style>

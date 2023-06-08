@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;500&display=swap');
 
 :root {
+	/**
+	 * Colors
+	 */
 	--bg: #111111;
 	--fg: #dddddd;
 	--fg-muted: #555468;
 	--dark-1: #1f2027;
 	--accent-1: #0066ff;
+	--accent-1-muted: #1a2a47;
 	--accent-2: #039c00;
 	--drop-shadow-1: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
@@ -54,13 +58,4 @@ p {
 .p-muted {
 	font-size: 14px;
 	color: var(--fg-muted);
-}
-
-/**
- * Container
- */
-
-.container {
-	max-width: 800px;
-	margin: 0 auto;
 }
