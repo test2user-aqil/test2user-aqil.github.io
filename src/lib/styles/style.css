@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;500&display=swap');
 
 :root {
-	--fg: #dad9ff;
+	--bg: #111111;
+	--fg: #dddddd;
+	--fg-muted: #555468;
+	--dark-1: #1f2027;
+	--accent-1: #0066ff;
+	--accent-2: #039c00;
+	--drop-shadow-1: 0px 0px 8px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -15,12 +21,35 @@ html {
 }
 
 body {
-	height: 100vh;
-	background: radial-gradient(50% 50% at 50% 50%, #252631 0%, #1a1b1f 100%);
-	font-family: 'Roboto', sans-serif; /* 'Roboto', sans-serif */
+	background: var(--bg);
+	font-family: 'Roboto', sans-serif;
 }
 
+/* Typograpy */
+
 h1,
-h2 {
+h2,
+h3,
+h4 {
 	font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 32px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 20px;
+}
+p {
+	font-size: 16px;
+}
+.p-muted {
+	font-size: 14px;
+	color: var(--fg-muted);
 }
