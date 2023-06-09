@@ -24,6 +24,11 @@
 			link="https://github.com/test2user-aqil/wdc_baku"
 			descripton="Stay on top of Baku's weather with the Weather Data Collector for Baku"
 		/>
+		<ProjectCard
+			title="dotfiles"
+			link="https://github.com/test2user-aqil/dotfiles"
+			descripton="A collection of my configuration files, also known as dotfiles"
+		/>
 	</div>
 </div>
 
