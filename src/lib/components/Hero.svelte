@@ -23,12 +23,12 @@
 		filter: drop-shadow(var(--drop-shadow-1));
 	}
 	.hero img {
-		position: fixed;
+		position: absolute;
 		background: url('/hero.jpg');
 		width: 100%;
 		height: 300px;
 		object-fit: cover;
 
-		filter: brightness(0.6);
+		filter: brightness(0.4);
 	}
 </style>
