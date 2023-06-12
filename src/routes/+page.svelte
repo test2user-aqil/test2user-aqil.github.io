@@ -29,6 +29,11 @@
 			link="https://github.com/test2user-aqil/dotfiles"
 			descripton="A collection of my configuration files, also known as dotfiles"
 		/>
+		<ProjectCard
+			title="todo"
+			link="https://github.com/test2user-aqil/todo"
+			descripton="A SvelteKit-based Todo List App"
+		/>
 	</div>
 </div>
 
